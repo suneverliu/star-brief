@@ -2,18 +2,18 @@
 
 Codex skill for generating concise STAR project briefs from specs and recent code changes.
 
-Codex 技能：基于 Spec 文档与最新代码变更，生成便于非技术读者理解的 STAR 项目说明文档。
+Codex 技能：基于 Spec 文档与最新代码变更，生成简明的 STAR 项目说明文档。
 
 ## Overview / 简介
 
-This skill helps Codex read project specs and recent implementation changes, then produce a concise STAR project brief for non-technical readers using the same language as the user's request:
+This skill helps Codex read project specs and recent implementation changes, then produce a concise STAR project brief for non-technical readers. The output language follows the user's explicit instruction first, then the user's input language, and finally the main language of the spec when needed:
 
 - Situation
 - Task
 - Action
 - Result
 
-这个 skill 会引导 Codex 读取项目规格文档与近期代码改动，并根据用户输入的语言生成中文或英文的 STAR 项目说明文档，帮助非技术读者快速理解项目背景、目标、关键动作与结果。
+这个 skill 会引导 Codex 读取项目规格文档与近期代码改动，并生成中文或英文的 STAR 项目说明文档。输出语言优先遵循用户明确指定，其次参考用户输入语言，必要时再参考 Spec 文档的主要语言，帮助非技术读者快速理解项目背景、目标、关键动作与结果。
 
 ## Install / 安装
 
@@ -66,7 +66,7 @@ Use $star-exec-brief to produce a concise, practical STAR project brief from the
 也可以直接使用中文描述任务，例如：
 
 ```text
-请使用 $star-exec-brief 读取当前工作区中的 Spec 文档和最新代码修改记录，生成一份便于非技术读者理解的 STAR 项目说明文档。
+请使用 $star-exec-brief 读取当前工作区中的 Spec 文档和最新代码修改记录，生成一份简明的 STAR 项目说明文档。
 ```
 
 ## Notes / 说明

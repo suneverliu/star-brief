@@ -9,11 +9,12 @@ description: Generate a concise STAR project brief from workspace specification 
 
 Read the current workspace, extract the project intent from specification documents and the newest implementation signals, then synthesize a STAR project brief that is easy for non-technical readers to understand.
 
-Match the output language to the user's request language:
+Determine the output language using this priority order:
 
-- If the user asks in Chinese, produce the final document in Chinese.
-- If the user asks in English, produce the final document in English.
 - If the user explicitly asks for a specific language, follow that instruction.
+- Otherwise, follow the main language of the user's natural-language request.
+- If the user's request is too short, mixed, or ambiguous, follow the main language of the spec or requirements documents.
+- If both the user request and the source documents are mixed or ambiguous, follow the language used in the user's latest request.
 
 Prefer business language over engineering jargon. Stay precise, concise, and evidence-based.
 
@@ -44,7 +45,7 @@ Build the document around four sections only:
 
 Write for non-technical readers.
 
-- Match the final document language to the user's natural language input unless the user explicitly requests another language.
+- Match the final document language using the language-priority rules above.
 - Keep the tone professional, concise, and business-oriented.
 - Keep the style practical and plain. Avoid decorative wording, inflated claims, and rhetorical flourishes.
 - Lead with impact, not implementation trivia.
