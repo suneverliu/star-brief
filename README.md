@@ -1,6 +1,6 @@
 # star-exec-brief
 
-Codex skill for generating executive STAR project briefs from specs and recent code changes.
+Codex skill for generating concise STAR project briefs from specs and recent code changes.
 
 Codex 技能：基于 Spec 文档与最新代码变更，生成便于非技术读者理解的 STAR 项目说明文档。
 
