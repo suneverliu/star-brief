@@ -1,9 +1,9 @@
 ---
-name: star-exec-brief
+name: star-brief
 description: Generate a concise STAR project brief from workspace specification documents and the latest code change history. Use when Codex needs to read Spec, PRD, design, requirements, or other project docs plus recent git changes, then explain the project in language that is easy for non-technical readers to understand while preserving clear business value, high-level technical actions, and measurable or decision-relevant outcomes.
 ---
 
-# Star Exec Brief
+# Star Brief
 
 ## Overview
 
